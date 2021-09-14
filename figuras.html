@@ -7,7 +7,56 @@
     <title>Figuras Geometrica|curso javascript</title>
   </head>
   <body>
-    <h1>Figuras Geometricas</h1>
+    <header>
+      <h1>Figuras geometricas</h1>
+    </header>
+
+    <section>
+      <p>Esta es una calculadora de Areas y perimetros</p>
+      <h2>calcula el area y perimetro de las figuras geometricas</h2>
+      <form id="cuadrado" action="">
+        <label for="inputCuadrado">Cuanto mide cada lado de tu cuadrado</label>
+        <input id="inputCuadrado" type="number" />
+        <button type="button" onclick="calcularPerimetroCuadrado()">
+          Calcular Perimetro
+        </button>
+        <button type="button" onclick="calcularAreaCuadrado()">
+          Calcular Area
+        </button>
+      </form>
+
+      <form id="triangulo" action="">
+        <label for="lado1">Cuanto mide el lado 1</label>
+        <input id="lado1" type="number" />
+
+        <label for="lado2">Cuanto mide el lado 2</label>
+        <input id="lado2" type="number" />
+
+        <label for="base">Cuanto mide la base</label>
+        <input id="base" type="number" />
+
+        <label for="altura">Cuanto mide la altura</label>
+        <input id="altura" type="number" />
+
+        <button type="button" onclick="calcularPerimetroTriangulo()">
+          Calcular Perimetro
+        </button>
+        <button type="button" onclick="calcularAreaTriangulo()">
+          Calcular Area
+        </button>
+      </form>
+
+      <form id="circulo" action="">
+        <label for="inputCirculo">Cuanto mide cada lado de tu Circulo</label>
+        <input id="inputCirculo" type="number" />
+        <button type="button" onclick="calcularPerimetroCirculo()">
+          Calcular Perimetro
+        </button>
+        <button type="button" onclick="calcularAreaCirculo()">
+          Calcular Area
+        </button>
+      </form>
+    </section>
 
     <script src="./figuras.js"></script>
   </body>
